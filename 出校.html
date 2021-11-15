@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>平安成电智慧通行</title>
+<style type="text/css">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+#components-layout-demo-custom-trigger{
+  min-height: 100vh;
+}
+.trigger {
+  padding-left:20px;
+}
+.logo{
+  position: relative;
+  height: 64px;
+  padding-left:24px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #002140;
+  transition: all .3s;
+}
+.logo-img{
+  display: inline-block;
+  height: 32px;
+  vertical-align: middle;
+}
+.logo-title{
+  display: inline-block;
+  height: 28px;
+  width: 158px;
+}
+.sider{
+  position: absolute;
+  bottom: 0;
+}
+.swither{
+  position: absolute;
+  right: 10;
+  bottom: 10;
+}
+.menu{
+  height: calc(100% - 100px);
+}
+.qiehuan{
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+.index_header_right{
+  padding-right: 10px;
+}
+</style>
+<style type="text/css">
+#app {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+</style>
+<style type="text/css">
+h3[data-v-469af010] {
+  margin: 40px 0 0;
+}
+ul[data-v-469af010] {
+  list-style-type: none;
+  padding: 0;
+}
+li[data-v-469af010] {
+  display: inline-block;
+  margin: 0 10px;
+}
+a[data-v-469af010] {
+  color: #42b983;
+}
+</style>
+<style type="text/css">
+.all[data-v-78b386c8]{
+    background-color: #FAFAFA;
+    height: 100vh;
+}
+.title[data-v-78b386c8]{
+    height:150px;
+    line-height: 150px;
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    background-color: #fff;
+}
+.info[data-v-78b386c8]{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.student[data-v-78b386c8]{
+    background-color: #fff;
+    padding-top: 10px;
+}
+.info span[data-v-78b386c8]:nth-child(1){
+    line-height: 37px;
+    font-size: 15px;
+    font-weight: 550;
+}
+.info span[data-v-78b386c8]:nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+}
+.education[data-v-78b386c8]{
+    color:2c3e50;
+    padding-right: 20px;
+}
+#time[data-v-78b386c8]{
+    font-size: 20px;
+    width: 200px;
+    line-height: 37px;
+    height: 37px;
+    overflow: hidden;
+    color:#11B894;
+    position: relative;
+    display: inline-block;
+}
+#time1[data-v-78b386c8]{
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+}
+#time2[data-v-78b386c8]{
+    font-size: 20px;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+}
+.name[data-v-78b386c8]{
+    padding-right: 10px;
+}
+img[data-v-78b386c8]{
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+}
+.miaobiao[data-v-78b386c8]{
+    margin-left: -4px;
+    margin-right: 5px;
+}
+img{
+vertical-align:middle;
+}
+#app{
+	display:none;
+}
+#name_get{
+	display:block;
+}
+</style>
+</head>
+  <body>
+    <noscript>
+      &lt;strong&gt;We're sorry but mine doesn't work properly without JavaScript enabled. Please enable it to continue.&lt;/strong&gt;
+    </noscript>
+    <div id="app" style="display: block;">
+		<div class="all" data-v-78b386c8="">
+			<div class="title" data-v-78b386c8="">
+				<p data-v-78b386c8="" id="success_msg">研究生用户，出校登记成功！</p>
+			</div>
+				<div class="student" data-v-78b386c8="">
+					<div class="info" data-v-78b386c8="">
+						<span data-v-78b386c8="">
+							<img width="11" alt="" src="https://uestc-msc.com/pingan/img/yonghu.3c08ded6.png" data-v-78b386c8="">
+							用户姓名
+						</span>
+						<span class="name" id="realname" data-v-78b386c8="">苏梦辉</span>
+					</div>
+					<div class="info" data-v-78b386c8="">
+						<span data-v-78b386c8="">
+							<img width="12" alt="" src="https://uestc-msc.com/pingan/img/user-group-fill.02d9192d.png" data-v-78b386c8=""> 
+							登记类型
+						</span>
+						<span class="education" data-v-78b386c8="">研究生（硕士）</span>
+					</div>
+					<div class="info" data-v-78b386c8="">
+						<span data-v-78b386c8="">
+						<img width="20" class="miaobiao" alt="" src="https://uestc-msc.com/pingan/img/miaobiao.9497b743.png" data-v-78b386c8="">
+						登记时间
+						</span>
+						<div id="time" data-v-78b386c8="">
+						<span id="time1" style="left: -33px;" data-v-78b386c8="">2021-11-15 16:45:8</span>
+						<span id="time2" style="left: 167px;" data-v-78b386c8="">2021-11-15 16:45:8</span>
+						</div>
+					</div>
+					<div class="info" data-v-78b386c8="">
+						<span data-v-78b386c8="" id="2_code" style="background-color:#02c3a4;color:white;padding-left:10px;padding-right:10px;margin:0 auto;display:block;border-radius:3px">
+						<a href="code.html" style="text-decoration:none;color:white;">前往个人二维码</a>
+						</span>
+					</div>
+          <div align="center">
+            <img src="https://uestc-msc.com/pingan/img/xiaohui.png" width="40" height="40">
+          </div>
+				</div>
+			</div>
+		</div>
+    <!-- built files will be auto injected -->
+	<div id="name_get" class="all" style="display: none;">
+		姓名：<input type="text" id="uname" placeholder="请输入你的名字">
+        <input type="button" value="出校" onclick="leave_school()">
+        <input type="button" value="入校" onclick="arrive_school()">
+	</div>
+<script type="text/javascript">
+function getTime(){
+	var myDate = new Date();
+	var myYear = myDate.getFullYear();
+	var myMonth = myDate.getMonth()+1;
+	var myDay = myDate.getDate();
+	var myHours = myDate.getHours();
+	var myMinutes = myDate.getMinutes();
+	var mySeconds = myDate.getSeconds();
+	var time1 = document.getElementById("time1");
+	var time2 = document.getElementById("time2");
+	time1.innerHTML = myYear+"-"+myMonth+"-"+myDay+" "+myHours+":"+myMinutes+":"+mySeconds;
+	time2.innerHTML = myYear+"-"+myMonth+"-"+myDay+" "+myHours+":"+myMinutes+":"+mySeconds;
+}
+function doMove(){
+	var time1 = document.getElementById("time1");
+	var time2 = document.getElementById("time2");
+	var left1 = parseInt(time1.style.left)-1;
+	if(left1 < -200){ left1 = 0;}
+	var left2 = parseInt(time2.style.left)-1;
+	if(left2 < 0){ left2 = 200;}
+	time1.style.left = left1 +"px";
+	time2.style.left = left2 +"px";
+	window.setTimeout("doMove()",30);
+}
+function leave_school(){
+    name_in();
+}
+function arrive_school(){
+    document.getElementById("success_msg").innerHTML = "研究生用户，入校登记成功！";
+    name_in();
+}
+function name_in(){
+	var utext = document.getElementById("uname");
+	var text = utext.value;
+	var name = document.getElementById("realname");
+	var app = document.getElementById("app");
+	var name_get =document.getElementById("name_get");
+	name.innerHTML = text;
+	name_get.style.display = "none";
+	app.style.display = "block";
+	
+}
+getTime();
+doMove();
+</script>
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>
